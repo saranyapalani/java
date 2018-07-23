@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main{
+public static void main(String[] args) 
+    {
+        int binnum, binnum1,rem, decnum=0, quot, q=1, w;
+        int octnum[] = new int[100];
+        Scanner scan = new Scanner(System.in);
+		System.out.print("Input a Binary Number : ");
+        binnum = scan.nextInt();
+        binnum1=binnum;
+     
+      while(binnum > 0)
+        {
+            rem = binnum % 10;
+            decnum = decnum + rem*q;
+            q = q*2;
+            binnum = binnum/10;
+        }   
+
+		q=1;
+        quot = decnum;
+		
+        while(quot > 0)
+        {
+            octnum[q++] = quot % 8;
+            quot = quot / 8;
+        }
+		
+        System.out.print("Equivalent Octal Value of " +binnum1+ " is :");
+        for(w=q-1; w>0; w--)
+        {
+            System.out.print(octnum[w]);
+        }
+ System.out.print("\n");
+ 
+    }
+}
