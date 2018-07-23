@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class Main{
+ public static void main(String[] args) 
+ {
+  int[] hex = new int[1000];
+  int u = 1, v = 0, rem, dec = 0, bin;
+  Scanner in = new Scanner(System.in);
+  System.out.print("Input a Binary Number: ");
+  bin = in.nextInt();
+  while (bin > 0) {
+   rem = bin % 2;
+   dec = dec + rem * u;
+   u = u * 2;
+   bin = bin / 10;
+  }
+   u = 0;
+  while (dec != 0) {
+   hex[u] = dec % 16;
+   dec = dec / 16;
+   u++;
+  }
+  System.out.print("HexaDecimal value: ");
+  for (v= u - 1; v >= 0; v--)
+  {
+   if (hex[v] > 9) 
+   {
+    System.out.print((char)(hex[v] + 55)+"\n");
+   } else
+   {
+    System.out.print(hex[v]+"\n");
+   }
+  }
+ }
+}
