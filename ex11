@@ -1,0 +1,12 @@
+public class Main
+{
+    public static void main(String[] args) 
+    {
+        double r=7.5;
+        double pi = 3.14, area, perimeter;
+        area = pi *r*r;
+        perimeter =2*pi*r;
+        System.out.println("Area of circle:"+area);
+        System.out.println("\nPerimeter of circle:"+perimeter);
+    }            
+}
