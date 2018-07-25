@@ -1,0 +1,15 @@
+import java.util.*;
+ public class Main{
+ public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input seconds: ");
+		int seconds = in.nextInt(); 
+        int a1 = seconds % 60;
+        int a2 = seconds / 60;
+        int a3 = a2 % 60;
+        a2 = a2 / 60;
+        System.out.print( a2 + ":" + a3 + ":" + a1);
+		System.out.print("\n");
+    }    
+ }
