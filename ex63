@@ -1,0 +1,20 @@
+import java.util.*;
+ public class Main{
+ public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the first number : ");
+        int c = in.nextInt();  
+		System.out.print("Input the second number: ");
+		int d = in.nextInt(); 
+		System.out.println("Result: "+result(c, d));
+    }
+	public static int result(int z, int a)
+     {  
+	if(z == a)
+		return 0;
+	    if(z % 6 == a % 6)
+		    return (z < a) ? z : a;
+	    return (z > a) ? z : a;
+     }
+}
