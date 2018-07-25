@@ -1,0 +1,14 @@
+import java.util.*;
+ public class Main{
+     public static void main(String[] args){
+		int a = 5;
+		int k = 20;
+		int i = 3;
+		System.out.println(result(a,k,i));
+	 } 		
+	public static int result(int a, int k, int i) {	
+		if (a%i == 0)
+			return( k/i - a/i + 1);
+		return(k/i - a/i);
+	}
+ }
