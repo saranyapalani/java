@@ -1,0 +1,23 @@
+import java.util.*;
+ public class Main{
+ public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the first number : ");
+        int a = in.nextInt();  
+		System.out.print("Input the second number: ");
+		int b = in.nextInt(); 
+		System.out.println("Result: "+common_digit(a, b));
+    }
+	
+	public static boolean common_digit(int s, int d)
+     {  
+	   if (s<25 || d>75)
+		   return false;
+	   int x = s % 10;
+	   int y = d % 10;
+	   s /= 10;
+	   d /= 10;
+	   return (s == d || s == y || x == d || x == y);
+     }
+}
