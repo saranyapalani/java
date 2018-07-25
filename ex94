@@ -1,0 +1,24 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main {
+ public static void main(String[] args)
+ {
+    int[] array_nums = {1, 7, 8, 5, 7, 13, 0, 2, 4, 9};
+	  
+	int q = 0;
+    System.out.println("Original Array: "+Arrays.toString(array_nums)); 
+    while(q < array_nums.length && array_nums[q] % 2 == 0)
+        q++;
+              
+    for(int j = q + 1; j < array_nums.length; j++) {
+        if(array_nums[j] % 2 != 0) {
+            int temp = array_nums[q];
+            array_nums[q] = array_nums[j];
+            array_nums[j] = temp;
+            q++;
+        }
+    }                                                    
+  
+	 System.out.println("New Array: "+Arrays.toString(array_nums)); 
+  }
+}
