@@ -1,0 +1,13 @@
+import java.util.*; 
+import java.io.*; 
+ public class Main {
+ public static void main(String[] args)
+ {
+    int n= 5;
+	String[] arr_string = new String[n];
+	
+    for(int u = 0; u < n; u++)
+        arr_string[u] = String.valueOf(u);                                  
+	 System.out.println("New Array: "+Arrays.toString(arr_string)); 
+	 }
+}
