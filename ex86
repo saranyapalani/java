@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int ctr = 0;
+		Scanner in = new Scanner(System.in);
+		int b = in.nextInt();
+		while (b != 1) {
+		    System.out.println(b);
+			if (b % 2 == 0) {
+				b = b / 2;
+				ctr += 1;
+			}
+			else {
+				b = (3 * b + 1) / 2;
+				ctr += 1;
+			}
+		}
+		System.out.println(ctr);
+		in.close();
+	}
+}
