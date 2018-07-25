@@ -1,0 +1,20 @@
+public class Main{
+    	public static void main(String args[]) {
+		System.out.println("\nDivided by 3: ");		
+		for (int w=1; w<100; w++) {
+			if (w%3==0) 
+			System.out.print(w +", ");			
+		}			
+				
+		System.out.println("\n\nDivided by 5: ");
+		for (int w=1; w<100; w++) {
+			if (w%5==0) System.out.print(w +", ");			
+		}
+				
+		System.out.println("\n\nDivided by 3 & 5: ");			
+		for (int w=1; w<100; w++) {
+			if (w%3==0 && w%5==0) System.out.print(w +", ");			
+		}
+		System.out.println("\n");
+  }
+}
