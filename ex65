@@ -1,0 +1,14 @@
+import java.util.*;
+ public class Main{
+ public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input the first number : ");
+        int f = in.nextInt();  
+		System.out.print("Input the second number: ");
+		int g = in.nextInt(); 
+		int divided = f / g;
+		int result = f - (divided * g);
+		System.out.println(result); 
+	}
+ }
