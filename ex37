@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main{
+     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Input a string: ");
+        char[] letters = scanner.nextLine().toCharArray();
+        System.out.print("Reverse string: ");
+        for (int s = letters.length - 1; s >= 0; s--) {
+            System.out.print(letters[s]);
+        }
+        System.out.print("\n");
+    }
+}
