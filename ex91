@@ -1,0 +1,15 @@
+import java.lang.*;
+ public class Main{
+ public static void main(String[] args)
+ {    
+    long startTime = System.nanoTime();
+	int m;
+	System.out.println ("The first 10 natural numbers are:\n");
+	for (m=1;m<=10;m++)
+	{      
+		System.out.println (m);
+	}
+		long estimatedTime = System.nanoTime() - startTime;
+	System.out.println("Estimated time (in nanoseconds) to get the first 10 natural numbers: "+estimatedTime);
+  }
+}
